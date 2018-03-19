@@ -1,4 +1,4 @@
-**Optimally designed vs intuition-driven inputs: The study case of promoter activity modelling**
+##Optimally designed vs intuition-driven inputs: The study case of promoter activity modelling##
 
 
 The scripts used to generate, analyse and visualise the data presented in the paper can be found in this repository.To run these scripts, you will need AMIGO2 Toolbox, available at the link [https://sites.google.com/site/amigo2toolbox/download](https://sites.google.com/site/amigo2toolbox/download)
