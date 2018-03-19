@@ -1,7 +1,7 @@
 **Optimally designed vs intuition-driven inputs: The study case of promoter activity modelling**
 
 
-The scripts used to generate, analyse and visualise the data presented in the paper can be found in this repository.To run these scripts, you will require the AMIGO2 Toolbox, available at the link [https://sites.google.com/site/amigo2toolbox/download](https://sites.google.com/site/amigo2toolbox/download)
+The scripts used to generate, analyse and visualise the data presented in the paper can be found in this repository.To run these scripts, you will need AMIGO2 Toolbox, available at the link [https://sites.google.com/site/amigo2toolbox/download](https://sites.google.com/site/amigo2toolbox/download)
 
 The scripts are organised in multiple subfolders:
 
@@ -42,7 +42,6 @@ To run the scripts in AMIGO2, please copy the folder of interest in the folder E
 The data associated with these scripts can be found at:
 
 [https://datasync.ed.ac.uk/index.php/s/6PXFa64PjBAOc6I](https://datasync.ed.ac.uk/index.php/s/6PXFa64PjBAOc6I)
-
 (Pwd: ODidiPAm\_CDC2018\_Data)
 
 References:
