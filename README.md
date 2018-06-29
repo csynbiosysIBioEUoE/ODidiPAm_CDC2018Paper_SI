@@ -27,7 +27,7 @@ The scripts are organised in multiple subfolders:
   - M3D\_load\_model.m and M3D\_steady\_state.m are used to specify the model (structure and parameter values) and compute the analytical steady state for a specified parameter vector and IPTG concentration;
   - ExtractionOfBestEstimate.m extracts, from the 100 iterations, the vector of parameter estimates yielding the minimum SSE over the test set.
   - ExtractionOfDataForImage3.m simulates the response of the fitted MIPr to inputs prototype from the pseudo-data datasets and extracts the csv files required to generate image 3 of the paper.
-  - bounds_for_parameter_estimation specifies the bounds on parameters during parameter estimation.
+  - bounds_for_parameter_estimation.docx specifies the bounds on parameters during parameter estimation.
 - --InputComparison contains:
   - Run\_in\_silico\_experiment\_parfor\_IntuitionDriven.m, which calls (fit\_to\_InduciblePromoter\_Step/Pulse/Random.m). These scripts simulate the response of MIPr to the specified classes of inputs and runs parameter estimation using 100 different initial conditions.
   - Run\_in\_silico\_experiment\_parfor\_Optimised.m, which calls (fit\_to\_InduciblePromoter\_Optimised.m). This script runs OID, simulates the response of MIPr to the designed input and runs parameter estimation. The procedure is repeated starting from 100 different initial conditions.
