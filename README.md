@@ -14,19 +14,19 @@ The scripts are organised in multiple subfolders:
   - PLac\_load\_model.m and PLac\_Compute\_SteadyState.m are used to specify the model (structure and parameter values) and compute the analytical steady state for a specified parameter vector and IPTG concentration;
   - MPLacr\_SSE\_Computation.m runs a simulation of the model under the experimental conditions considered in [1] and computes the SSE between numerical and experimental expression levels.
   - Run\_fit\_to\_MPLacr.m calls fit\_to\_MPLacr.m, which is used to perform parameter estimation, using cross validation and starting from 100 different initial conditions, on the experimental datasets available in [1].
-  - m extracts, from the 100 iterations, the vector of parameter estimates yielding the minimum SSE over the test set.
+  - ExtractionOfBestEstimate.m extracts, from the 100 iterations, the vector of parameter estimates yielding the minimum SSE over the test set.
 - --MIP contains:
   - Run\_MIP\_in\_silico\_experiment.m, which calls MIP\_in\_silico.m. The latter runs a simulation of the MIP model (obtained by fitting the 3D model structure to the experimental data acquired in [1]) in response to a step in IPTG. The same script is used to generate a dose-response curve;
   - M3D\_load\_model\_Experimental.m and M3D\_steady\_state\_Experimental.m are used to specify the model (structure and parameter values) and compute the analytical steady state for a specified parameter vector and IPTG concentration;
   - MIP\_SSE\_Computation.m runs a simulation of the MIP model under the experimental conditions considered in [1] and computes the SSE between numerical and experimental expression levels.
   - Run\_fit\_to\_MIP.m calls fit\_to\_MIP.m, which is used to perform parameter estimation, using cross validation and starting from 100 different initial conditions, on the experimental datasets available in [1].
-  - m extracts, from the 100 iterations, the vector of parameter estimates yielding the minimum SSE over the test set.
+  - ExtractionOfBestEstimate.m extracts, from the 100 iterations, the vector of parameter estimates yielding the minimum SSE over the test set.
   - Ref7\_Data\_StructureCreation.m creates, starting from data provided by the authors in [1], a structure to be used in the fitting. Please refer to reference [1] for access to the data.
 - --MIPr contains:
   - Run\_fit\_to\_MIPr.m calls fit\_to\_MIPr.m, which is used to perform parameter estimation, using cross validation and starting from 100 different initial conditions, on the pseudo experimental dataset.
   - M3D\_load\_model.m and M3D\_steady\_state.m are used to specify the model (structure and parameter values) and compute the analytical steady state for a specified parameter vector and IPTG concentration;
-  - m extracts, from the 100 iterations, the vector of parameter estimates yielding the minimum SSE over the test set.
-  - m simulates the response of the fitted MIPr to inputs prototype from the pseudo-data datasets and extracts the csv files required to generate image 3 of the paper.
+  - ExtractionOfBestEstimate.m extracts, from the 100 iterations, the vector of parameter estimates yielding the minimum SSE over the test set.
+  - ExtractionOfDataForImage3.m simulates the response of the fitted MIPr to inputs prototype from the pseudo-data datasets and extracts the csv files required to generate image 3 of the paper.
   - bounds_for_parameter_estimation specifies the bounds on parameters during parameter estimation.
 - --InputComparison contains:
   - Run\_in\_silico\_experiment\_parfor\_IntuitionDriven.m, which calls (fit\_to\_InduciblePromoter\_Step/Pulse/Random.m). These scripts simulate the response of MIPr to the specified classes of inputs and runs parameter estimation using 100 different initial conditions.
